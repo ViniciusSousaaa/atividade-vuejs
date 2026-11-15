@@ -1,5 +1,48 @@
-# Vue 3 + Vite
+# Atividade Vue.js (Desafio Extra)
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Aplicação web responsiva desenvolvida com Vue.js, com seis componentes visuais implementados como componentes Vue.
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+## Componentes
+
+| Componente | Arquivo | Exemplo de uso |
+|---|---|---|
+| Acordeão | `Accordion.vue` | Perguntas frequentes |
+| Paginação | `Pagination.vue` | Listagem de produtos |
+| Barra de Progresso | `ProgressBar.vue` | Upload de arquivo |
+| Abas | `Tabs.vue` | Perfil do usuário |
+| Menu Suspenso | `DropdownMenu.vue` | Seleção de idioma |
+| Notificação Toast | `ToastNotification.vue` | Sucesso e erro ao salvar |
+
+## Conceitos utilizados
+
+- Componente principal (`App.vue`) integrando os demais
+- Props para passar dados entre componentes
+- Estado local com `data` e `computed`
+- Eventos com `@click` e emissão com `$emit`
+- Lifecycle hooks (`mounted`, `beforeUnmount`)
+- Serviço global de notificações (`$toast`)
+
+## Estrutura
+
+```
+├── index.html
+└── src/
+    ├── main.js
+    ├── App.vue
+    ├── style.css
+    ├── components/
+    └── services/toastService.js
+```
+
+## Como executar
+
+```bash
+npm install
+npm run dev
+```
+
+Acesse `http://localhost:5173`.
+
+## Autor
+
+Vinicius Sousa - Tópicos Avançados em Programação
